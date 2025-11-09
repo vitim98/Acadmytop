@@ -1,0 +1,18 @@
+document.getElementById('registrationForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Impede o envio padrão do formulário
+
+    // Validação básica (o HTML já tem 'required', mas o JS pode fazer mais)
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const plan = document.getElementById('plan').value;
+
+    if (name && email && phone && plan) {
+        // Simulação de envio para o servidor
+        console.log("Dados enviados:", { name, email, phone, plan });
+        alert("Inscrição realizada com sucesso! Entraremos em contato em breve.");
+        this.reset(); // Limpa o formulário
+    } else {
+        alert("Por favor, preencha todos os campos.");
+    }
+});
