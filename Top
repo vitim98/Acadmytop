@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição Academia ExemploFit</title>
+    <link rel="stylesheet" href="style.css"> <!-- Vincula o arquivo CSS -->
+</head>
+<body>
+    <div class="container">
+  
+<form id="registrationForm">
+            <h1>Inscrição ExemploFit</h1>
+            <p>Preencha o formulário abaixo para se matricular.</p>
+
+            <div class="form-group">
+                <label for="name">Nome Completo:</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" placeholder="(XX) XXXXX-XXXX" required>
+            </div>
+
+            <div class="form-group">
+                <label for="plan">Plano Desejado:</label>
+                <select id="plan" required>
+                    <option value="">Selecione um plano</option>
+                    <option value="Basico">Básico (R$ 59,90/mês)</option>
+                    <option value="Premium">Premium (R$ 99,90/mês)</option>
+                    <option value="Anual">Anual (R$ 899,90/ano)</option>
+                </select>
+            </div>
+
+            <button type="submit">Inscrever-se</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script> <!-- Vincula o arquivo JavaScript -->
+</body>
+</html>
